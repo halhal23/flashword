@@ -1,2 +1,19 @@
-<h1>Types#index</h1>
-<p>Find me in app/views/types/index.html.erb</p>
+<%= link_to "新規作成", :new_type, class: "btn btn-outline-success mb-3" %>
+
+
+<% if @types.present? %>
+<div class="card-wrapper">
+  <% @types.each do |t| %>
+    <div class="card">
+      <div class="title-wrapper">
+        <h1 class="title-text"><%= t.name %></h1>
+      </div>
+      <div class="content">
+        <%= link_to "一覧", "#", class: "btn btn-outline-info" %>
+        <%= link_to "テスト", "#", class: "btn btn-outline-warning" %>
+        <%= link_to "単語追加", "#", class: "btn btn-outline-secondary" %>
+      </div>
+    </div>
+  <% end %>
+</div>
+<% end %>

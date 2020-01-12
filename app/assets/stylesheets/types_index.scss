@@ -1,0 +1,46 @@
+.card-wrapper {
+  background: #ccc;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  overflow-x: scroll;
+}
+
+.card {
+  background: #fff;
+  width: 240px;
+  height: 320px;
+  box-shadow: 4px 4px 8px black;
+  margin-right: 15px;
+}
+
+.card > .title-wrapper {
+  width: 100%;
+  height: 30%;
+  background: #151515;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card > .title-wrapper > .title-text {
+  color: white;
+}
+
+.card > .content {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+
+
+
+
