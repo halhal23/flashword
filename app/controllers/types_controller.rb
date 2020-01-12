@@ -5,6 +5,7 @@ class TypesController < ApplicationController
 
   def show
     @type = Type.find(params[:id])
+    @words = Word.where(type_id: params[:id])
   end
 
   def new
