@@ -1,0 +1,13 @@
+<h1>Words#new</h1>
+<p>Find me in app/views/words/new.html.erb</p>
+
+<%= form_for @word do |f| %>
+  <div class="form-group">
+    <%= f.text_field :title, class: "form-control", placeholder: "タイトル" %>
+  </div>
+  <div class="form-group">
+    <%= f.text_area :answer, class: "form-control", placeholder: "答え" %>
+  </div>
+  <%= f.hidden_field :type_id, value: @word.type_id %>
+  <%= f.submit "作成", class: "btn btn-outline-primary" %>
+<% end %>
