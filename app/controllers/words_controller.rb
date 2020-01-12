@@ -18,6 +18,13 @@ class WordsController < ApplicationController
   def edit
   end
 
+  def destroy
+    @word = Word.find(params[:id])
+    @type_id = @word.type_id
+    @word.destroy
+    redirect_to type_path(@type_id)
+  end
+
   private
   
   def params_word
