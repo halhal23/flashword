@@ -1,2 +1,9 @@
 <h1>Types#new</h1>
 <p>Find me in app/views/types/new.html.erb</p>
+
+<%= form_for @type do |f| %>
+  <div class="form-group">
+    <%= f.text_field :name, class: "form-control", placeholder: "タイプ名" %>
+  </div>
+  <%= f.submit "作成", class: "btn btn-outline-primary" %>
+<% end %>
